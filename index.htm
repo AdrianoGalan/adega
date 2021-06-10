@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adega</title>
+</head>
+<style>
+    .borda {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+
+    <h1>Adega</h1>
+
+    <form action="">
+        <label id="etiqueta" for="id">id</label>
+        <input type="number" name="id" id="id" placeholder="Digite id">
+
+        <label id="etiqueta" for="nome">nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite nome">
+
+        <label id="etiqueta" for="safra">safra</label>
+        <input type="date" name="safra" id="safra" placeholder="Digite safra">
+
+        <label id="etiqueta" for="preco">preco</label>
+        <input type="number" name="preco" id="preco" placeholder="Digite preco">
+
+        <button onclick="addVinho()">Adicionar</button>
+        <button onclick="pesquisar()">Pesquisar</button>
+    </form>
+
+    <hr>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nome</th>
+                    <th>safra</th>
+                    <th>preco</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script src="funcoes.ts"></script>
+
+</html>
